@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Awesome trivia</h1>
+    <div id="container" class="container">
+        <form id="form">
+            <label for="amount">Number of questions</label><br>
+            <input type="text" id="amount" value="10"/><br>
+            <label for="category">Category</label><br>
+            <select id="category">
+                <option value="0">Any category</option>
+                <option value="9">General knowledge</option>
+                <option value="10">Books</option>
+                <option value="11">Movies</option>
+                <option value="12">Music</option>
+                <option value="13">Musicals Theathers</option>
+                <option value="14">TV</option>
+                <option value="15">Videogames</option>
+                <option value="16">Board Games</option>
+                <option value="17">Science and Nature</option>
+                <option value="18">Computation</option>
+                <option value="19">Math</option>
+                <option value="20">Mithology</option>
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="24">Politics</option>
+                <option value="25">Art</option>
+                <option value="26">Celebrities</option>
+                <option value="27">Animals</option>
+                <option value="28">Cars</option>
+                <option value="29">Comics</option>
+                <option value="30">Gadgets</option>
+                <option value="31">Ánime and Manga</option>
+                <option value="32">Cartoons</option>
+            </select><br>
+            <label for="difficulty">Difficulty</label><br>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select><br>
+            <label for="type">Type of questions</label><br>
+            <select id="type">
+                <option value="multiple">Multiple questions</option>
+                <option value="boolean">True / False</option>
+            </select><br>
+            <input class="button-primary" type="submit" value="Begin"/>
+        </form>
+        <div id="questionform"></div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
